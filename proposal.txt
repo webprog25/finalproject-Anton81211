@@ -1,26 +1,32 @@
 Webprog Final Project Proposal
 =============================
-<TODO: Fill in this proposal template and remove the TODOs (including the < >).>
-
-Project Title: <TODO: Come up with a name, or a short description will do>
-Your Name: <TODO>
+Project Title: Online Arcade
+Your Name: Anton Urbanek
 
 Description
 -----------
-<TODO: Tell us about your project idea. What will it do, how will it work. A paragraph or two should do. It may be helpful to include a "feature list" that details what users will be able to do in the app.>
+So, my plan for this project is to create a mini arcade. Meaning, the user starts out on a main page (a hub, if you will), and from there they can select somewhere between two to three games (I haven't decided on the number of games yet).
+The games I'll implement are going to be on the mechanically easier side. So, no typical arcade staples like Street Fighter, Space Harrier or Out Run. Also, nothing with side-scrolling (à la Gradius).
+For now, I am planning to implement simplified versions of Tetris and Pac-Man. For a potential third game, I'm thinking about something turn-based (similar to the battle mechanic in Pokemon).
+
+For each game, there will be a high score system in place, and the top 10 high scores (with a three letter name) will be displayed in a ranking. If a user manages the obtain enough score during a game, they
+can input their name and get placed on the leaderboard. This is also where the database comes in handy. The games themselves do not offer save states. Hence, the MongoDb will only be used to store the top
+ten scores for each game.
 
 Milestone(s)
 ------------
-<TODO: Talk a bit about the process you want to take, and what you'd like to have done by the check-in milestone. I won't hold you to that milestone; we just want you to be thinking about the order you'll be working on things. If there are any current or anticipated blockers (e.g. needing to get data from an external source or getting feedback on something), please identify those here too.>
+Until the first milestone, I would like to finish implementing the version of Tetris, I'm planning to build. This should enable me to show you how to interface and the games work. Also, in terms of the interface, I would give me an
+opportunity to see what works and what parts of the interface don't work.
 
 External libraries and code
 ---------------------------
-<TODO: Identify any external libraries or code you plan to use, and describe how it fits into your project. It's fine to say "None" here, and you can change your mind later.>
+I haven't planned anything here, yet. For now, I would say: "None", but this might change later.
 
 Collaboration and resources
 ---------------------------
-<TODO: Identify any sources you plan to consult, except for code listed above. This might include getting feedback from users or getting data from an external source.>
+For Feedback, I would just let my parents and friends play through some of the games during development. External resources will mainly consist of Stackoverflow and other Webpages. I'm not going to copy code from there,
+but those websites do tend to give helpful tips. I don't plan to use ChatGPT at all.
 
 Anything else?
 -------------
-<TODO: Anything else you'd like me to know?>
+The games will not be called Tetris nor Pac-man since both names a Trade Marked. So, I'll go for some very creative names like: Blocks Falling from the Sky Game (You cannot trade mark normal words).
