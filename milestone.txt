@@ -1,29 +1,44 @@
 Final Project Milestone
 ==============================
 
-Project Title: <TODO>
-Your Name: <TODO>
+Project Title: Online Arcade
+Your Name: Anton Urbanek, 11940992
 
 Overview
 --------
-<TODO: Let me know how things are going. What have you explored, looked into, worked on, and tried so far? What do you have left to do? Are you running into any particular difficulties or blockers?>
+So far, I've finished the basic prototype for the Tetris clone. It's actually fully playable, but there are still some missing features. For example, I haven't included any
+MongoDB connection, yet. Also, in general, I want to do more styling. For now, the entry page for the games is simply an empty page with a link to the game HTML. Also, I would like
+to implement the PacMan clone I mentioned in the proposal. This should be easy enough since I can reuse code from the tetris clone. In this regard, I ought to clean up the code a bit and
+split it up into multiple js-files (since I am planning to use some functions across both games).
 
 Project Changes
 ---------------
-<TODO: If you are planning to change something about your project (scope, features, etc.) from your proposal, please let me know what changes you're planning to make.>
+No changes planned.
 
 Implementation Details
 ----------------------
-<TODO: Describe how you will implement (or have implemented) a specific feature or part of the project. Include specific details about the frontend (e.g. what classes you'll have and how the user interface will work) and backend (e.g. what API endpoints you'll use and how you'll store the data). As with the proposal, this can change later; I just want to make sure you've thought through some of these details.>
+Well, I think I've described the implemented code pretty well in the JavaScript file itself. But for now the codebase is structured as follows: index.html includes links which open
+the respective game HTML (for now we only have tetris.html). I am still debating whether each game should have its own CSS. For now, each game also has its own monolithic js-file. I am planning
+on splitting up and modularizing those monoliths later.
 
 External libraries and code
 ---------------------------
-<TODO: Identify any external libraries or code you are using or plan to use, and describe how it fits into your project. Please include everything even if you already listed it in your proposal.>
+Just in case, I'm going to list canvas here: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas
+Other than canvas, I am not using anything special.
 
 Collaboration and resources
 ---------------------------
-<TODO: Identify any sources you have consulted or plan to consult, except for code listed above. Include those you listed previously in your proposal.>
+Here are a few links to resources that helped me implement Tetris:
+https://levelup.gitconnected.com/build-a-tetris-game-with-html-canvas-css-and-javascript-on-autocode-132c8346e60c
+https://medium.com/swlh/building-tetris-in-js-the-rotation-problem-and-asynchronous-functions-3a7c42dcac8d
+https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1
+https://web.itu.edu.tr/~msilgu/tetris/tetris.html
+
+I didn't copy any code directly from those resources, it's more the case that some elements influenced my approach to certain challenges when creating this prototype.
 
 Anything else?
 --------------
-<TODO: Anything else you'd like me to know?>
+For the proposal you asked me (in blackboard) whether or not I would write this in pure JavaScript. I wanted to answer your question sooner, but I forgot about it. Anyways, excluding
+canvas: Yes, this will be written in pure JavaScript and also HTML and CSS.
+
+Additionally, I'm sorry for the delayed turn-in... I thought the submission deadline for the milestone was the 22nd (I look at the wrong group, sorry).
