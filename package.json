@@ -1,7 +1,7 @@
 {
   "name": "@webprog/project",
   "version": "2025.spr",
-  "author": "Your Name <your@email>",
+  "author": "Anton Urbanek anton.urbanek@stud.plus.ac.at",
   "description": "Webprog Final Project",
   "license": "UNLICENSED",
   "private": true,
@@ -12,7 +12,8 @@
     "chokidar": "^3.5.3",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mongodb": "^5.5.0",
+    "sqlite3": "^5.1.7",
+    "sqlite": "^5.1.1",
     "nodemon": "^2.0.22",
     "socket.io": "^4.6.1"
   },

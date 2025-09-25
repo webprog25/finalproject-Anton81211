@@ -1,3 +1,4 @@
+//Old version reworked!!!
 const canvas = document.getElementById('tetris'); // Here we reference the HTML canvas (I might change the name later on)
 const context = canvas.getContext('2d'); // We use the 2d drawing context, since our games are in 2d (and a collision check in 3D is a lot more difficult)
 context.scale(20, 20); // each block is 20x20px

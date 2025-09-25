@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse; /* No spacing between table cells*/
+  background: #222222; /* Table background slighly lighter than body background*/
+  border-radius: 8px;
+  overflow: hidden; /* Rounded corners apply to the inner content.*/
+  width: 300px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #333333; /* Table header is slightly lighter than the table background*/
+}
+
+tr:nth-child(even) {
+  background: #2a2a2a; /* Pseudoclass, every even table row is slightly darker than the uneven table rows*/
+}
+
+.backLink {
+  margin-top: 20px;
+  color: #22dd77;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.backLink:hover {
+  color: #33ff99;
+}

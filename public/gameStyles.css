@@ -1,0 +1,72 @@
+/*I have decided to unify the css for both games. That is not the smartest approach, but it has
+the advantage of offering all the CSS code in one place (easier to check, especially if the CSS code is rather small).*/
+body {
+  margin: 0;
+  background: #111; /* This is a kind of dark gray color I got from VS Code (I essentially just copied the layout color from VS Code because I think it looks good).*/
+  color: #fff; /* Usually written as #ffffff but you can shorten it to #fff*/
+  font-family: Arial, Verdana, Tahoma,  sans-serif; /* From here: https://www.w3schools.com/cssref/css_websafe_fonts.php only the Sans-serif fonts.*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Wrapper for the Canvas and HUD*/
+.game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.gameCanvas {
+  background: #111; /* Same as game background. The goal is to have unused areas blend in with the background.*/
+  border: 2px solid #555; /* The color for the border was - in all honesty - chosen by trial and error. I just think that the lighter gray looks nice.*/
+  image-rendering: pixelated; /* This setting makes the pixels sharper (so no auto-aliasing) which gives the game a more retro look.*/
+}
+
+/* The score, live and start button are contained within the HUD.*/
+.hud {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.score,
+.lives {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04); /* Both the score and the lives have a very sutle translucent background. Makes the pop out more.*/
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #22dd77; /* I wanted some type of neo-green for the play button, and settled on this one after some trial and error.*/
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #111; /* Same font color as the background*/
+  transition: background 0.2s; /* Smoother background color transition for the start button. (200 ms)*/
+}
+
+.btn:hover {
+  background: #33ff99; /* When the user hovers over the button, the color transitions to a lighter neon-green (Again, settling on this color was trial and error).*/
+}
+
+.backLink {
+  margin-top: 20px;
+  color: #22dd77;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.backLink:hover {
+  color: #33ff99;
+}

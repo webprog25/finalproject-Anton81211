@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, Verdana, Tahoma, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.gameCard {
+  background: #222222; /* I wanted the game cards the display as actual cards. That's why I needed to set them apart from the background by using a lighter color. (Found via trial and error)*/
+  padding: 16px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6); /* A soft shadow for the box to give it a more 3D look.*/
+  text-align: center;
+}
+
+.gameCard img {
+  width: 100%;
+  height: 360px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  background: #22dd77;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #33ff99;
+}

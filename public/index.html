@@ -3,12 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <title>Final Project</title>
-
     <!-- This line provides automatic page and style reloading when files change -->
     <script type="module" src="/lib/client/updater.js"></script>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <a href="tetris.html">Tetris!</a> <!-- For now you can accesss the games via a simple link. I'll have to think about a better design later on -->
+    <h1>Final Project</h1>
+    <!-- The general structure of the page is as follows: All games are containing within one game container as game cards. These cards include a preview image of the game,
+     the title of the game, and a start and score button-->
+    <div class="gameContainer">
+      <div class="gameCard">
+        <img src="img/tetris.PNG" alt="Tetris preview">
+        <h2>Tetris</h2>
+        <div class="buttons">
+          <a href="tetris.html"><button class="btn">Play</button></a>
+          <a href="scores.html?game=tetris"><button class="btn">View Scores</button></a><!-- I use the ?game=tetris part of the link to tell the scores.js for what game we are generating the scores.-->
+        </div>
+      </div>
+      <div class="gameCard">
+        <img src="img/pacman.PNG" alt="Pacman preview">
+        <h2>Pac-Man</h2>
+        <div class="buttons">
+          <a href="pacman.html"><button class="btn">Play</button></a>
+          <a href="scores.html?game=pacman"><button class="btn">View Scores</button></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

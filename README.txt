@@ -2,24 +2,43 @@
 Final Project
 ====================
 
-Project Title: <TODO>
-Your Name: <TODO>
+Project Title: Online Arcade
+Your Name: Anton Urbanek
 
 Overview
 --------
-<TODO: A short description of your project and what it does.>
+This project is a prototype for a game collection website. Simply put, the website collects a number of games and displays them as cards with a picture, a start button, and the ability to view high scores.
+Each game is implemented via the HTML canvas element. Allowing players to play the game and store their highscore with a three letter, capitalized name on the score board for the game.
 
 Running
 -------
-<TODO: In general, I should be able to `npm install` and `npm start` your project. If there is anything else we need to know about running your project, please let us know here.>
+You only need npm install and npm start.
 
-Do I need to load data from init_db.mongodb? <TODO: Yes/No>
+Do I need to load data from init_db.mongodb? No (I use Sqlite)
 
 Features
 --------
-<TODO: This doesn't have to be a comprehensive list. But if there's anything I should definitely try or might miss, this is a good place to let me know about that.>
+The list of implemented feature is rather long, I invite you to just play the games and read my comments. The comments mainly explain the rationale behind some of the features. Also, I invite you to check out the included design documents.
 
 Collaboration and libraries
 ---------------------------
-<TODO: Identify any sources you have consulted or libraries/external code you used. If your project overlaps with another project or coursework for another class, please describe the overlap and the parts specific to you/lecture here.>
+For Tetris I had a look at the following implementation, nothing was copied, but the general ideas behind the implementations helped me in creating my code:
+https://levelup.gitconnected.com/build-a-tetris-game-with-html-canvas-css-and-javascript-on-autocode-132c8346e60c
+https://medium.com/swlh/building-tetris-in-js-the-rotation-problem-and-asynchronous-functions-3a7c42dcac8d
+https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1
+https://web.itu.edu.tr/~msilgu/tetris/tetris.html
 
+Same holds for Pacman:
+https://github.com/bward2/pacman-js
+https://github.com/kubowania/pac-man
+https://codepen.io/hellokatili/pen/xwKRmo
+https://www.youtube.com/watch?v=Tk48dQCdQ3E 
+
+Also, I added the following to the package.json:
+"sqlite3": "^5.1.7",
+"sqlite": "^5.1.1",
+The version numbers are from here: https://www.npmjs.com/package/sqlite3 and https://www.npmjs.com/package/sqlite
+
+For the design documents I used:
+https://xournalpp.github.io/ for the map
+https://balsamiq.com/ for the wireframes

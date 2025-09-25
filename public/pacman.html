@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Tetris</title>
+  <title>Pacman</title>
+  <script type="module" src="pacman.js"></script>
   <link rel="stylesheet" href="gameStyles.css" />
-  <script type="module" src="tetrisnew.js"></script>
 </head>
 <body>
   <div id="game" class="game">
-    <canvas id="tetris" width="240" height="400" class="gameCanvas"></canvas>
+    <canvas id="pacman" width="320" height="320" class="gameCanvas"></canvas>
     <div id="hud" class="hud">
       <div id="score" class="score">Score: 0</div>
+      <div id="lives" class="lives">Lives: 3</div>
       <button id="start" class="btn">Start</button>
     </div>
     <a href="index.html" class="backLink">Back to Home</a>
